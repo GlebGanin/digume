@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"> -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- link to font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- <link type="text/css" rel="stylesheet" href="materialize.min.css" media="screen,projection" /> -->
+  <link rel="stylesheet" href="css/cover_letter_style.css">
+
+  <title>Digume</title>
+</head>
+
+
+<body>
+
+  <% include ../partials/profile_nav %>
+
+
+  <div class="row">
+
+    <!-- <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper" id="profile_builder_nav">
+          <a href="#" class="brand-logo" id="nav_logo">Cover Letter Builder </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="collapsible.html">Log Out</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div> -->
+
+
+    <!-- //LEFT SIDE OF PAGE -->
+
+    <div class="col s4" id="main_window_left">
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Company Name" id="company_name" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_add_company">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Your Name" id="your_name" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_name">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Your Job Descrition" id="your_description" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_job_description">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Your Location" id="your_location" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_location">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <!-- //DROPDOWN MENU -->
+      <div class="input-field col s9 offset-s1 z-depth-3" id="clb_input_text">
+        <select id="custom_adjective">
+          <option value="" disabled selected>Choose your wording</option>
+          <option id="pick_adjective" value="1">I have a passion for</option>
+          <option id="pick_adjective" value="2">I have a strong interest in</option>
+        </select>
+
+        <div class="input-field">
+          <input placeholder="or, customize your wording" id="your_adjective" type="text">
+        </div>
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-green z-depth-3 cl_green_button" id="cl_add_adjective">
+          <i class="material-icons">add</i></a>
+      </div>
+
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Company Focus Areas" id="company_focus" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_add_focus_areas">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Company Industry" id="company_industry" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_add_industry">
+          <i class="material-icons">add</i></a>
+      </div>
+
+
+      <!-- //DROPDOWN MENU -->
+      <div class="input-field col s9 offset-s1 z-depth-3" id="clb_input_text">
+        <select id="pick_word">
+          <option value="" disabled selected>Choose your wording</option>
+          <option id="pick_adjective" value="1">I thrive in </option>
+          <option id="pick_adjective" value="2">I enjoy</option>
+          <option id="pick_adjective" value="3">I excel in</option>
+          <option id="pick_adjective" value="4">I specialize in</option>
+        </select>
+        <div class="input-field">
+          <input placeholder="pick a verb that you like" id="custom_verb" type="text">
+        </div>
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-green z-depth-3 cl_green_button" id="cl_add_pickword">
+          <i class="material-icons">add</i></a>
+      </div>
+
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="What do you enjoy building?" id="replace_software" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_software">
+          <i class="material-icons">add</i></a>
+      </div>
+
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="What are you interested in?" id="replace_interests" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_interests">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe an applicable project" id="replace_project" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_add_project">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe the technologies you used" id="replace_technologies" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_list_technologies">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe the technologies you used" id="replace_collab" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_list_collaboration">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe similar technologies" id="replace_similar" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_similar_button">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe similar technologies" id="replace_similar" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_orange_button"
+          id="cl_similar_button">
+          <i class="material-icons">add</i></a>
+      </div>
+
+      <div class="input-field col s9 offset-s1 z-depth-3 " id="clb_input_text">
+        <input placeholder="Describe databases you know" id="replace_databases" type="text">
+      </div>
+      <div class="col s2"> <a class="btn-floating btn-large waves-effect waves-orange cl_add_button z-depth-3 cl_blue_button"
+          id="cl_databases_button">
+          <i class="material-icons">add</i></a>
+      </div>
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- //RIGHT SIDE OF PAGE -->
+
+    <div class="col s8" id="main_window_right">
+      <div id="spacer"></div>
+
+      <div class="col s10 offset-s1 z-depth-4" id="builder_input">
+        <p class="cover_letter_text"> To
+          <% include ../partials/cover_letter_options/1company_name %> HR Department, <br><br>
+
+          </span id="indent"> Hello, my name is</span>
+
+          <% include ../partials/cover_letter_options/2applicant_name %> and I am a
+
+          <% include ../partials/cover_letter_options/3job_description %> based in
+
+          <% include ../partials/cover_letter_options/4your_location %>
+
+          <% include ../partials/cover_letter_options/5first_adjective %>
+
+          <% include ../partials/cover_letter_options/6company_focus%> and particularly the
+
+          <% include ../partials/cover_letter_options/7company_industry%> industry.
+
+          <% include ../partials/cover_letter_options/8add_verb%> developing intuitive and user-fiendly
+
+          <% include ../partials/cover_letter_options/9add_software%> I have a strong interest in the
+
+          <% include ../partials/cover_letter_options/10add_interests%> In one of my recent projects, I
+
+          <% include ../partials/cover_letter_options/11add_project%> I focused on the
+
+          <% include ../partials/cover_letter_options/12add_technologies%> parts of the project
+
+          <% include ../partials/cover_letter_options/13add_collaboration%> In previous projects I've
+
+          <% include ../partials/cover_letter_options/14add_similar%> I am experienced
+
+          <% include ../partials/cover_letter_options/15add_databases%>
+
+          Upon reviewing the job requirements and responsibilites, I believe that I am and ideal candidate for this
+          position.
+
+          I look forward to hearing from you, Thank you for your consideration,
+
+          <p class="cover_letter_text"> Thank you, <br><br>
+            -
+            <% include ../partials/cover_letter_options/2applicant_name %>
+          </p>
+        </p>
+
+
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <% include ../partials/footer %>
+  <script type="text/javascript" src="js/cl_script.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <% include ../partials/profile_style_and_links %>
+
+  <meta charset="UTF-8">
+  <title>Digume</title>
+</head>
+
+
+<body>
+
+  <% include ../partials/profile_nav %>
+
+  <!-- <button id="remove"> Remove </button>
+    <button id="add"> Add </button> -->
+
+
+  <div class="parallax-container">
+    <div class="parallax"><img class="parallax_image" src="/images/goldengate.jpg"></div>
+  </div>
+  <div class="section white" id="profile_body">
+
+
+
+    <div id="profile_width">
+
+
+      <div class="checkbox">
+        <input type="checkbox" id="checkbox_1">
+        <label for="checkbox_1">Pure CSS Checkbox</label>
+      </div>
+
+
+
+      <!-- <div class="row container"> -->
+      <div class="header" id="profile_heading">Profile Page</div>
+      <div id="profile_card">
+        <% include ../partials/profile_card/profile_card %>
+      </div>
+      <!-- <div class="left_profile" id="profile_border"> -->
+
+      <div id="work_history_status">
+        <% include ../partials/profile_sections/work_history/work_history %>
+      </div>
+
+      <div class="hidden" id="education_status">
+        <% include ../partials/profile_sections/education/education %>
+      </div>
+
+      <div class="hidden" id="project_status">
+        <% include ../partials/profile_sections/projects/projects %>
+      </div>
+
+      <div class="hidden" id="passions_status">
+        <% include ../partials/profile_sections/passions/passions %>
+      </div>
+
+      <% include ../partials/profile_sections/floating_menu/floating_menu %>
+
+      <div style="clear: both;"></div>
+    </div>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax"><img class="parallax_image" src="/images/st_basil.jpg"></div>
+  </div>
+  </div>
+
+
+
+  <% include ../partials/footer %>
+
+</body>
+
+
+</html>

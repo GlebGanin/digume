@@ -1,0 +1,395 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("../images/background1.png");
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.border {
+  border-style: solid;
+  border-color: rgb(124, 124, 124);
+  border-width: 3px;
+  /* border-radius: 10px; */
+  padding: 15px;
+}
+
+#login_window {
+  background-color: #a2acade5;
+  height: 1000px;
+}
+
+.login {
+  padding-top: 35px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+}
+
+#shadow {
+  margin-top: 100px;
+  background-color: #f0f0f0a9;
+  width: 40%;
+  margin-left: 30%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #83888a9a;
+  border-width: 2px;
+}
+
+#main_window {
+  height: 1000px;
+  background-color: rgba(194, 190, 190, 0.705);
+  border-left-style: solid;
+  border-right-style: solid;
+  border-color: rgba(124, 124, 124, 0.986);
+  border-width: 3px;
+  /* border-radius: 10px; */
+  padding: 15px;
+}
+
+#main_window_left {
+  height: 1000px;
+  background-color: #a2acade5;
+  border-right-style: solid;
+  border-color: rgba(202, 213, 216, 0.986);
+  border-width: 3px;
+  /* border-radius: 10px; */
+  padding: 15px;
+}
+
+#main_window_right {
+  height: 1000px;
+  background-color: #a2acade1;
+  padding: 15px;
+}
+
+#profile_builder_nav {
+  background-color: #5b9aec;
+}
+
+#nav_logo {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#nav_image {
+  height: 80px;
+  width: 80px;
+}
+
+#nav_link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+#nav_logo_floating {
+  background-color: rgb(253, 253, 253);
+  border-style: solid;
+  border-color: rgba(12, 18, 46, 0.849);
+  border-width: 3px;
+  border-radius: 20% 50% 50% 20%;
+  /* float: right; */
+  height: 80px;
+  width: 80px;
+  /* margin-right: 10%; */
+  /* margin-bottom: 200px; */
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+#builder_input {
+  margin-top: 20px;
+  background-color: #eaeeeead;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#builder_input_text {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+#login_input {
+  background-color: #eaeeeead;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#import_linkedin {
+  width: 65%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #5b9aec;
+}
+
+#load_linkedin {
+  width: 65%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background-color: #5b9aec;
+}
+
+.disabled {
+  height: 58px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-color: rgba(73, 71, 71, 0.589);
+  border-width: 3px;
+}
+
+#linkedin_import {
+  font-size: 25px;
+  text-align: center;
+}
+
+#linkedin_logo {
+  margin-top: 105px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#plus_sign {
+  /* padding: 3px; */
+  margin-left: 15px;
+  color: black;
+  font-size: 35px;
+}
+
+#nav_logo {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+#login_box {
+  background-color: #5b9aec;
+  font-size: 20px;
+  padding-left: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  /* margin-bottom:40px; */
+}
+
+#index_nav_option {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+#login_box_body {
+  background-color: #a7dddd7c;
+}
+
+#login_button {
+  background-color: #5b9aec;
+  margin-top: 20px;
+}
+
+#user_name {
+  color: black;
+}
+
+#margin_top {
+  margin-top: 40px;
+}
+
+#create_box {
+  background-color: #57f593b7;
+  font-size: 20px;
+  padding-left: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+#create_box_body {
+  background-color: #80f1ac69;
+  font-size: 20px;
+}
+
+#create_button {
+  background-color: #57f593b7;
+  margin-top: 20px;
+}
+
+.header {
+  color: #e61e1ea8;
+  font-weight: 400;
+}
+
+/* //MATERIALIZE FORM CSS */
+
+.progress {
+  visibility: hidden;
+  margin-top: 130px;
+  width: 80%;
+}
+
+.input-field label {
+  color: rgb(27, 3, 3);
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: rgb(177, 27, 27);
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+/* //PROFILE PARALLAX  */
+.parallax-container {
+  height: 250px;
+}
+
+#profile_body {
+  height: 100%;
+}
+
+.parallax_image {
+  width: 100%;
+}
+
+parallax-container .parallax img {
+  /* display: none; */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#parallax-show {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#profile_width {
+  margin-left: 10%;
+  width: 80%;
+}
+
+.left_profile {
+  width: 49%;
+  float: left;
+}
+
+.right_profile {
+  width: 49%;
+  float: right;
+}
+
+#profile_border {
+  border-style: solid;
+  border-color: rgb(124, 124, 124);
+  border-width: 3px;
+}
+
+#profile_section {
+  border-radius: 10px;
+}
+
+/* //EXPANDING DIVS FORMAT: */
+
+.author_bio_toggle_wrapper {
+}
+
+#author_bio_wrap {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  background: gray;
+  width: auto;
+  height: 50px;
+}
+
+#author_bio_wrap_toggle {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  background: #9e9e77;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-variant: small-caps;
+  box-shadow: 2px 2px 3px #888888;
+  text-decoration: none;
+}
+
+#author_bio_wrap_toggle:hover {
+  text-decoration: none;
+  border-top: 1px groove white;
+  border-left: 1px groove white;
+  border-bottom: 1px solid #7b7b78;
+  border-right: 1px solid #7b7b78;
+  color: #663200;
+  background: #ebebb3;
+  box-shadow: 1px 1px 2px #888888;
+}
+
+#footer_style {
+  background-color: #5b9aec;
+  padding: 0px;
+}
+
+#footer_div {
+  /* padding: 10px; */
+  height: 50px;
+}
+
+#footer_text {
+  padding: 15px;
+}
+
+#footer_spacing {
+  margin-left: 50%;
+}
+
+.footer_link {
+  padding: 15px;
+}
+
+.footer_link:hover {
+  background-color: #426faa77;
+}
+
+#profile_work_experience_checkbox {
+  position: relative;
+  top: 38px;
+  left: -25px;
+}
+
+/* end .squaredTwo

@@ -1,0 +1,546 @@
+#profile_builder_nav {
+  background-color: #5b9aec;
+  /* height: 80px; */
+}
+
+#footer_style {
+  background-color: #5b9aec;
+  padding: 0px;
+}
+
+#footer_div {
+  /* padding: 10px; */
+  height: 50px;
+}
+
+#footer_text {
+  padding: 15px;
+}
+
+#footer_spacing {
+  margin-left: 50%;
+}
+
+.footer_link {
+  padding: 15px;
+}
+
+.footer_link:hover {
+  background-color: #426faa77;
+}
+
+#nav_logo {
+  margin-left: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#nav_image {
+  height: 80px;
+  width: 80px;
+}
+
+#nav_link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+#nav_logo_floating {
+  background-color: rgb(253, 253, 253);
+  border-style: solid;
+  border-color: rgba(12, 18, 46, 0.849);
+  border-width: 3px;
+  border-radius: 20% 50% 50% 20%;
+  /* float: right; */
+  height: 80px;
+  width: 80px;
+  /* margin-right: 10%; */
+  /* margin-bottom: 200px; */
+  position: relative;
+  top: 8px;
+  left: 8px;
+}
+
+#create_box {
+  background-color: #5b9aec;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding-left: 6%;
+}
+
+#inactive_section {
+  background-color: #42474dab;
+  color: rgb(202, 202, 202);
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  padding-left: 6%;
+}
+
+#create_box:hover {
+  background-color: #85b2ee;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+}
+
+#create_box_body {
+  background-color: #01b9e744;
+  font-size: 20px;
+}
+
+#create_button {
+  background-color: #57f593b7;
+  margin-top: 20px;
+}
+
+.header {
+  color: #000008a8;
+  font-weight: 400;
+}
+
+/* //MATERIALIZE FORM CSS */
+
+.progress {
+  visibility: hidden;
+  margin-top: 130px;
+  width: 80%;
+}
+
+.input-field label {
+  color: rgb(27, 3, 3);
+}
+/* label focus color */
+.input-field input[type="text"]:focus + label {
+  color: rgb(177, 27, 27);
+}
+/* label underline focus color */
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* valid color */
+.input-field input[type="text"].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #000;
+}
+
+/* //PROFILE PARALLAX  */
+.parallax-container {
+  height: 250px;
+}
+
+#profile_body {
+  height: 100%;
+  border-top: solid;
+  border-width: 3px;
+  border-color: rgba(14, 31, 70, 0.856);
+}
+
+#profile_add_section {
+  padding-top: 3px;
+  height: 40px;
+  background-color: #077ae6e0;
+  margin-top: 40px;
+  width: 20%;
+  margin-left: 40%;
+  /* padding-bottom: 10px; */
+}
+
+#company_search_button {
+  height: 40px;
+  background-color: #077ae6e0;
+}
+
+#company_search_results {
+  background-color: #c0daf3e0;
+  border-radius: 5px;
+}
+
+.parallax_image {
+  width: 100%;
+}
+
+parallax-container .parallax img {
+  /* display: none; */
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#parallax-show {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#profile_width {
+  margin-left: 10%;
+  width: 80%;
+  margin-bottom: 150px;
+}
+
+#profile_border {
+  border-style: solid;
+  border-color: rgba(14, 26, 53, 0.596);
+  border-width: 3px;
+}
+
+/* //EXPANDING DIVS FORMAT: */
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+#work_history_section {
+  width: 48%;
+  position: relative;
+  top: -190px;
+  left: 0%;
+}
+
+#education_training_section {
+  width: 48%;
+  position: relative;
+  top: -190px;
+  left: 0%;
+}
+
+#projects_section {
+  width: 48%;
+  position: relative;
+  top: -190px;
+  left: 0%;
+}
+
+#hobbies_section {
+  width: 48%;
+  position: relative;
+  top: -190px;
+  left: 0%;
+}
+
+.hidden {
+  display: none;
+}
+
+.plus_sign {
+  padding: 3px;
+  margin-left: 15px;
+  color: black;
+  font-size: 40px;
+}
+
+#close_sign {
+  float: right;
+  color: black;
+  font-size: 35px;
+}
+
+.badge2 {
+  /* margin-left: 70%; */
+}
+
+#create_box:hover .plus_sign {
+  padding: 3px;
+  margin-left: 15px;
+  color: rgb(245, 246, 247);
+  font-size: 25px;
+}
+
+#profile_heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+}
+
+/* //PROFILE CARD */
+#profile_picture_floating {
+  background-color: rgb(253, 253, 253);
+  border-style: solid;
+  border-color: rgba(12, 18, 46, 0.849);
+  border-width: 3px;
+  border-radius: 20% 50% 50% 20%;
+  float: right;
+  height: 100px;
+  width: 100px;
+  margin-right: 10%;
+  /* margin-bottom: 200px; */
+  position: relative;
+  top: -30px;
+  left: 20px;
+}
+
+#profile_card_width {
+  background-color: #608eca;
+  width: 48%;
+  height: 180px;
+  border-style: solid;
+  border-color: rgba(14, 26, 53, 0.596);
+  border-width: 3px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.float_right {
+  float: right;
+}
+
+.float_left {
+  float: left;
+}
+
+#profile_card_name {
+  font-size: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#profile_card_location {
+  position: relative;
+}
+
+#profile_card {
+  position: relative;
+  top: -150px;
+  left: 52%;
+}
+
+td {
+  height: 20px;
+}
+
+tr {
+  border-bottom: none;
+}
+
+table {
+  width: 60%;
+  position: relative;
+  top: -50px;
+  left: 2%;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  height: 54px;
+  width: 50px;
+  border-style: solid;
+  border-color: rgba(13, 43, 112, 0.808);
+  border-width: 2px;
+  /* text-align: center;
+  text-decoration: none; */
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  background-color: rgba(168, 196, 238, 0.582);
+  border-style: solid;
+  border-color: rgba(38, 92, 219, 0.925);
+  border-width: 2px;
+  height: 54px;
+  width: 50px;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+#profile_phone_icon {
+  background: #55acee;
+}
+
+/* Twitter */
+#profile_email_icon {
+  background: #55acee;
+}
+
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+
+.attention {
+  border-color: yellow;
+}
+
+#social_media_links {
+  position: relative;
+  top: -90px;
+  left: -15px;
+}
+
+.social_meidia_icon {
+  margin-left: 15px;
+  border-radius: 14px;
+}
+
+.back_color {
+  background-color: white;
+}
+
+.profile_card_icon {
+  font-size: 0px;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  left: -7px;
+  color: rgb(248, 250, 218);
+}
+
+.inactive_section {
+  background-color: white;
+}
+
+#icon_button {
+  align-self: right;
+}
+
+#floating_add_button {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: -15px;
+  left: -15px;
+}
+
+#floating_add_button_plus {
+  padding: 7px;
+  align-content: center;
+}
+
+.profile_add_section {
+  margin-bottom: 20px;
+}
+
+.profile_add_item {
+  margin-right: 110%;
+}
+
+.floating_menu {
+  color: black;
+}
+
+/* //WORK HISTORY DATA  */
+
+.work_history_details {
+  width: 96%;
+  margin-left: 2%;
+  margin-bottom: 40px;
+}
+
+.bullet_point {
+  margin-bottom: 10px;
+}
+
+.position {
+  color: rgb(3, 3, 112);
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: rgb(136, 134, 134);
+}
+
+.margin_bullets {
+  width: 80%;
+  margin-left: 10%;
+}
+
+#work_history_add_new_section {
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-left: 30%;
+  width: 40%;
+  text-align: center;
+}
+
+/* #profile_work_add_new {
+  position: relative;
+  top: 20%;
+  left: 93%;
+} */
+
+/* //ADD WORK HISTORY MODAL */
+
+.modal_style {
+  width: 60%;
+  height: 800px;
+}
+
+#add_work_history_form {
+  width: 86%;
+  margin-left: 7%;
+  margin-top: 1 0px;
+}
+
+.add_work_history_row {
+  margin: 0px;
+}
+
+#add_work_history_text {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(0, 17, 71);
+}
+
+.my_input-field {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#add_more_experience {
+  padding-top: 3px;
+  height: 40px;
+  background-color: #077ae6e0;
+}
+
+#remove_field {
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+
+#experience_bullet {
+  float: left;
+  color: rgb(0, 17, 71);
+  position: relative;
+  top: 38px;
+  left: -25px;
+}
