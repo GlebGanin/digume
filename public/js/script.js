@@ -1,6 +1,7 @@
 $(document).ready(function() {
   jQuery(".parallax").parallax();
   $(".modal").modal();
+  $(".dropdown-trigger").dropdown();
 
   setTimeout(function() {
     $("#floating_add_button").removeClass("pulse");
@@ -94,23 +95,104 @@ $(document).on("click", "#profile_linkedin_icon", function() {
 //   $("#load_linkedin").removeClass("disabled");
 // });
 
-$(document).on("click", "#add_education", function() {
-  $("#education_status").removeClass("hidden");
-});
-
 $(document).on("click", "#add_more_experience", function() {
-  $("#work_examples").prepend(
-    "<div class='my_input-field col s11 offset-s1'>" +
-      "<i class='tiny material-icons left' id='experience_bullet'> lens</i>" +
-      "<span id='remove_field' class='badge'>" +
-      "<i class='tiny material-icons '>close</i> </span>" +
-      "<input placeholder='example...' class='add_work_history_row' id='company_dates' type='text'>" +
-      "</div>"
-  );
+  addExperienceBullet();
 });
 
 $(document).on("click", "#remove_field", function() {
   $(this)
     .parent()
-    .remove();
+    .fadeOut();
 });
+
+//HIDE AND SHOW WORK EXPERIENCE SECTIONS BY CLICKING POSITION TITLE
+$(document).on("click", ".position", function() {
+  $("#hide_details").addClass("hidden");
+  $(".position").addClass("unhide");
+  $(".work_history_dates").removeClass("hidden");
+});
+
+$(document).on("click", ".unhide", function() {
+  $("#hide_details").removeClass("hidden");
+  $(".position").removeClass("unhide");
+  $(".work_history_dates").addClass("hidden");
+});
+
+//ACTIVE AND DEACTIVATE WORK HISTORY BULLETS
+$(document).on("click", ".activate", function() {
+  // $(this).removeClass("activate");
+  $(this).addClass("work_history_bullet_active");
+  $(this)
+    .find(".bullet_menu")
+    .removeClass("hidden");
+});
+
+$(document).on("click", ".work_history_bullet_active", function() {
+  $(this).removeClass("work_history_bullet_active");
+  // $(this).addClass("activate");
+  $(this)
+    .find(".bullet_menu")
+    .addClass("hidden");
+  // $(this).attr("contenteditable", "true");
+});
+
+//REMOVE/CLOSE WORK HISTORY BULLET
+$(document).on("click", "#bullet_icon_close", function() {
+  $(this)
+    .parent()
+    .parent()
+    .parent()
+    .fadeOut();
+});
+
+//EDIT WORK HISTORY BULLET
+$(document).on("click", "#bullet_icon_edit", function() {
+  // $(".bullet_menu").append(
+  //   "<span class='bullet_menu right'>" +
+  //     "<div class='badge bullet_menu_icon' id='bullet_menu_icon_height'>" +
+  //     "<i class='tiny material-icons' id='bullet_icon_close'>plus</i>" +
+  //     "</div>" +
+  //     "<div class='badge bullet_menu_icon' id='bullet_menu_icon_height'>" +
+  //     "<i class='tiny material-icons' id='bullet_icon_edit'>home</i>" +
+  //     "</div></span>"
+  // );
+  // $(this)
+  //   .parent()
+  //   .parent()
+  //   .parent()
+  //   .attr("contenteditable", "true");
+});
+
+$(document).on("click", "#profile_add_bullets", function() {
+  event.preventDefault();
+  addExpereinceBulletDiv();
+  // addProfileBullet();
+});
+
+//OLD EDIT FUNCTION WITHOUT "CONTENTEDITABLE"
+// var bullet_text = $(this)
+//   .parent()
+//   .parent()
+//   .parent()
+//   .find(".bullet_text")
+//   .text();
+
+// $(this)
+//   .parent()
+//   .parent()
+//   .parent()
+//   .before(
+//     "<div class='work_history_bullet'>" +
+//       "<span class='bullet_menu right invisible'></span>" +
+//       "<div class='left work_history_checkbox'>" +
+//       "<i class='tiny material-icons' id='bullet_icon_edit'>edit</i>" +
+//       "</div> <div class='bullet_text'>" +
+//       bullet_text +
+//       "</div></div>"
+//   );
+
+// $(this)
+//   .parent()
+//   .parent()
+//   .parent()
+//   .addClass("hidden");

@@ -152,10 +152,21 @@
   padding-top: 3px;
   height: 40px;
   background-color: #077ae6e0;
-  margin-top: 40px;
-  width: 20%;
-  margin-left: 40%;
-  /* padding-bottom: 10px; */
+  margin-left: 5%;
+}
+
+#profile_add_bullets {
+  padding-top: 3px;
+  height: 40px;
+  background-color: #077ae6e0;
+  margin-left: 5%;
+}
+
+#profile_edit_section {
+  padding-top: 3px;
+  height: 40px;
+  background-color: #077ae6e0;
+  margin-left: 5%;
 }
 
 #company_search_button {
@@ -252,6 +263,10 @@ parallax-container .parallax img {
   display: none;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .plus_sign {
   padding: 3px;
   margin-left: 15px;
@@ -263,10 +278,6 @@ parallax-container .parallax img {
   float: right;
   color: black;
   font-size: 35px;
-}
-
-.badge2 {
-  /* margin-left: 70%; */
 }
 
 #create_box:hover .plus_sign {
@@ -457,6 +468,7 @@ table {
 
 .bullet_point {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .position {
@@ -543,4 +555,86 @@ table {
   position: relative;
   top: 38px;
   left: -25px;
+}
+
+.bullet_text {
+  margin-left: 34px;
+}
+
+.work_history_bullet {
+  margin-left: 2%;
+  padding: 10px 10px 10px 18px;
+  background-color: #f2f8faa1;
+  border-style: solid;
+  border-color: #d7eaf0a1;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.work_history_bullet_active {
+  margin-left: 2%;
+  padding: 10px 10px 10px 18px;
+  border-style: solid;
+  border-color: rgba(40, 116, 231, 0.651);
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+.work_history_checkbox {
+  margin-top: 3px;
+  height: 100%;
+}
+
+#work_history_buttons {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 15%;
+}
+
+.bullet_menu {
+  /* display: none; */
+  /* background-color: rgba(40, 116, 231, 0.651); */
+  padding: 2px 2px 2px 2px;
+  border-radius: 0px 10px 0px 0px;
+  position: relative;
+  top: -12px;
+  left: 10px;
+  height: 100%;
+}
+
+#bullet_icon_close {
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(10, 62, 141, 0.904);
+}
+
+#bullet_icon_close:hover {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(247, 247, 247, 0.904);
+}
+
+#bullet_icon_edit {
+  padding: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(10, 62, 141, 0.904);
+}
+
+#bullet_icon_edit:hover {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(247, 247, 247, 0.904);
+}
+
+#bullet_menu_icon_height {
+  height: 24px;
+}
+
+.work_history_dates {
+  padding-top: 6px;
+  margin-left: 20%;
 }
